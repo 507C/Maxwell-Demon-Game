@@ -98,8 +98,8 @@ class Walls(AABBs):
         topleft[1], bottomright[1] = ti.Vector([0.99, 0]), ti.Vector([1, 1])
         topleft[2], bottomright[2] = ti.Vector([0.01, 0]), ti.Vector([0.99, 0.01])
         topleft[3], bottomright[3] = ti.Vector([0.01, 0.99]), ti.Vector([0.99, 1])
-        topleft[4], bottomright[4] = ti.Vector([0.495, 0.01]), ti.Vector([0.505, 0.4])
-        topleft[5], bottomright[5] = ti.Vector([0.495, 0.6]), ti.Vector([0.505, 0.99])
+        topleft[4], bottomright[4] = ti.Vector([0.495, 0.01]), ti.Vector([0.505, 0.45])
+        topleft[5], bottomright[5] = ti.Vector([0.495, 0.55]), ti.Vector([0.505, 0.99])
         for i in range(N):
             vel_walls[i] = ti.Vector([0, 0]) # all still, no velocity
         super().__init__(N, mass, topleft, bottomright, elasticity, vel_walls)
